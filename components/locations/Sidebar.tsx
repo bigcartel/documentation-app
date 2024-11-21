@@ -33,12 +33,15 @@ const Sidebar = () => {
       case 'config':
         path = `category/${getSpace}-cover`;
         break;
+      case 'customPage':
+        path = `category/custom-page`;
+        break;
       case 'page':
         const slug = sdk.entry.fields['permalink'].getValue('en-US');
 
         if (slug.includes('about')) path = 'company/about';
+        else if (slug.includes('alternative')) path = 'product/compare';
         else if (slug.includes('craft')) path = 'craft-industries';
-        else if (slug.includes('etsy')) path = 'product/compare-etsy';
         else if (slug.includes('examples')) path = 'product/examples';
         else if (slug.includes('makers')) path = 'product/for-makers';
         else if (slug.includes('gold')) path = 'plans/gold';
@@ -47,12 +50,8 @@ const Sidebar = () => {
         else if (slug.includes('jobs')) path = 'company/jobs';
         else if (slug.includes('premium')) path = 'plans/premium';
         else if (slug.includes('pricing')) path = 'product/pricing';
-        else if (slug.includes('shopify')) path = 'product/compare-shopify';
-        else if (slug.includes('squarespace'))
-          path = 'product/compare-squarespace';
         else if (slug.includes('templates')) path = 'product/templates';
-        else if (slug.includes('wix')) path = 'product/compare-wix';
-        
+
         break;
       case 'post':
         path = 'category/posts';
