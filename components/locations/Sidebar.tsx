@@ -52,8 +52,7 @@ const Sidebar = () => {
           path = 'product/compare-squarespace';
         else if (slug.includes('templates')) path = 'product/templates';
         else if (slug.includes('wix')) path = 'product/compare-wix';
-
-        console.log(`slug: ${slug}`);
+        
         break;
       case 'post':
         path = 'category/posts';
