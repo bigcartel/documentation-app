@@ -14,8 +14,6 @@ const Sidebar = () => {
       ? 'blog'
       : 'help';
 
-  // console.log('sdk', sdk);
-
   const handleClick = () => {
     const type = sdk.ids.contentType;
     let path = 'intro';
@@ -72,7 +70,7 @@ const Sidebar = () => {
 
   return (
     <Button variant='secondary' isFullWidth onClick={handleClick}>
-      View Documentation
+      View the Documentation
     </Button>
   );
 };
