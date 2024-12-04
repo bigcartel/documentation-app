@@ -70,7 +70,7 @@ const Sidebar = () => {
 
   return (
     <Button variant='secondary' isFullWidth onClick={handleClick}>
-      View the Documentation
+      View Documentation
     </Button>
   );
 };
