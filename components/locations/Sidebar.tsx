@@ -25,7 +25,7 @@ const Sidebar = () => {
         path = 'category/articles';
         break;
       case 'author':
-        path = 'category/authorsW';
+        path = 'category/authors';
         break;
       case 'category':
         path = 'category/categories';
