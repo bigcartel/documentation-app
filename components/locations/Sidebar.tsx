@@ -32,7 +32,7 @@ const Sidebar = () => {
         path = `category/${getSpace}-cover`;
         break;
       case 'customPage':
-        path = `category/custom-page`;
+        path = `category/custom-pages`;
         break;
       case 'page':
         path = 'category/pages';
