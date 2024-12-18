@@ -35,17 +35,7 @@ const Sidebar = () => {
         path = `category/custom-page`;
         break;
       case 'page':
-        const slug = sdk.entry.fields['permalink'].getValue('en-US');
-
-        if (slug.includes('alternative')) path = 'product/compare';
-        else if (slug.includes('craft')) path = 'craft-industries';
-        else if (slug.includes('makers')) path = 'product/for-makers';
-        else if (slug.includes('gold')) path = 'plans/gold';
-        else if (slug.includes('holiday')) path = 'holiday-toolkit';
-        else if (slug.includes('home')) path = 'homepage';
-        else if (slug.includes('premium')) path = 'plans/premium';
-        else if (slug.includes('pricing')) path = 'product/pricing';
-        else path = 'category/pages';
+        path = 'category/pages';
         break;
       case 'post':
         path = 'category/posts';
