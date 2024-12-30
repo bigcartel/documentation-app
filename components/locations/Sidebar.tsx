@@ -34,6 +34,9 @@ const Sidebar = () => {
       case 'customPage':
         path = `category/custom-pages`;
         break;
+      case 'globalNavigation':
+        path = `category/global-navigation`;
+        break;
       case 'page':
         path = 'category/pages';
         break;
