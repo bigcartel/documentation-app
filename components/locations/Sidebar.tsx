@@ -20,38 +20,41 @@ const Sidebar = () => {
 
     switch (type) {
       case 'article':
-        path = 'articles';
+        path = 'category/articles';
         break;
       case 'author':
-        path = 'authors';
+        path = 'category/authors';
         break;
       case 'category':
-        path = 'categories';
+        path = 'category/categories';
         break;
       case 'config':
-        path = `${getSpace}-cover`;
+        path = `category/${getSpace}-cover`;
         break;
       case 'customPage':
-        path = `custom-pages`;
+        path = `category/custom-pages`;
         break;
       case 'globalNavigation':
-        path = `global-navigation`;
+        path = `category/global-navigation`;
+        break;
+      case 'homePage':
+        path = `homepage`;
         break;
       case 'page':
-        path = 'pages';
+        path = 'category/pages';
         break;
       case 'post':
-        path = 'posts';
+        path = 'category/posts';
         break;
       case 'tag':
-        path = 'tags';
+        path = 'category/tags';
         break;
       case 'topic':
-        path = 'topics';
+        path = 'category/topics';
         break;
     }
 
-    const url = `https://bigcartel.github.io/ctfl-documentation/docs/category/${path}`;
+    const url = `https://bigcartel.github.io/ctfl-documentation/docs/${path}`;
     window.open(url, '_blank');
   };
 
